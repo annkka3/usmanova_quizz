@@ -33,7 +33,7 @@ export function LeadGate({ onSubmit }: LeadGateProps) {
     <section className="screen lead-screen">
       <div className="screen-heading">
         <h1>
-          Последний шаг.
+          Последний шаг.{' '}
           <span className="lead-title-break">Введите имя и почту, чтобы открыть ваш результат</span>
         </h1>
       </div>

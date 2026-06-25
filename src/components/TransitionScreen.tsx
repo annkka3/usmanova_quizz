@@ -7,6 +7,7 @@ import communityImage5 from '../assets/community/community-5.jpg';
 import communityImage6 from '../assets/community/community-6.jpg';
 import communityImage7 from '../assets/community/community-7.jpg';
 import finalBeforeAfterImage from '../assets/final/before-after-final.jpg';
+import nutritionChatImage from '../assets/transition/nutrition-chat.jpg';
 import reviewImage1 from '../assets/reviews/review-1.webp';
 import reviewImage2 from '../assets/reviews/review-2.webp';
 import reviewImage3 from '../assets/reviews/review-3.webp';
@@ -91,8 +92,7 @@ function TransitionVisual({ visual }: { visual?: TransitionScreenData['visual'] 
   if (visual === 'nutrition-chat') {
     return (
       <div className="chat-visual" aria-label="Переписка с помощником по питанию">
-        <p>Что съесть в кафе?</p>
-        <p>Выберите белок, овощи и простой гарнир. Так будет сытно и спокойно для цели.</p>
+        <img src={nutritionChatImage} alt="" loading="lazy" />
       </div>
     );
   }

@@ -79,7 +79,9 @@ export function ResultScreen({ name, answers, result, onNext }: ResultScreenProp
     <section className="screen result-screen">
       <div className="result-hero-card">
         <span className="soft-badge">План собран под ваши ответы</span>
-        <h1>{name}, первые изменения вы заметите уже в первую неделю</h1>
+        <h1>
+          {name}, первые изменения вы заметите уже в <span className="result-title-accent">первую</span> неделю
+        </h1>
         {heroChips.length ? (
           <div className="result-chips" aria-label="Ключевые параметры плана">
             {heroChips.map((chip) => (
