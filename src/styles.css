@@ -2025,6 +2025,7 @@ input {
   }
 }
 
+@media (max-width: 719px) {
 /* Screen 1 premium hero composition */
 .quiz-page.is-hero-page {
   padding: 8px 12px 18px;
@@ -2232,8 +2233,9 @@ input {
   color: rgba(36, 33, 36, 0.5);
   box-shadow: 0 12px 26px rgba(171, 95, 119, 0.11);
 }
+} /* end @media (max-width: 719px) — Screen 1 mobile hero */
 
-@media (min-width: 390px) {
+@media (min-width: 390px) and (max-width: 719px) {
   .hero-question-screen .start-offer {
     max-width: 246px;
   }
