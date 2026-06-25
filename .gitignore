@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.git/
+.vercel/
+.vite/
+.DS_Store
+__MACOSX/
+*.local
+*.tsbuildinfo
+*.zip
+playwright-report/
+test-results/
+coverage/
+.env
+.env.*
+!.env.example
