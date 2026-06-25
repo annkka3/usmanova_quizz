@@ -3265,3 +3265,104 @@ input {
     display: none;
   }
 }
+
+/* ── Desktop no-scroll layouts: screens 15, 21, 22 ── */
+@media (min-width: 720px) {
+
+  /* Screen 15 — nutrition chat, 2-col */
+  .quiz-page:has(.tone-nutrition) {
+    align-items: center;
+    padding: 18px 24px 28px;
+  }
+  .quiz-card:has(.tone-nutrition) {
+    width: min(100%, 920px);
+    max-width: 920px;
+    min-height: auto;
+    padding: 30px 38px 34px;
+  }
+  .tone-nutrition {
+    display: grid;
+    grid-template-columns: min(40%, 310px) 1fr;
+    align-items: center;
+    gap: 12px 40px;
+  }
+  .tone-nutrition .chat-visual {
+    grid-column: 1;
+    grid-row: 1 / 5;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 0;
+    align-self: center;
+  }
+  .tone-nutrition .screen-heading {
+    grid-column: 2;
+    margin-bottom: 0;
+  }
+  .tone-nutrition .point-list {
+    grid-column: 2;
+    margin-bottom: 0;
+  }
+  .tone-nutrition .sticky-action {
+    grid-column: 2;
+    position: static;
+    margin-top: 4px;
+  }
+  .tone-nutrition .transition-button-note {
+    grid-column: 2;
+    margin: 0;
+  }
+
+  /* Screen 21 — lead gate, narrow centered card */
+  .quiz-page:has(.lead-screen) {
+    align-items: center;
+    padding: 18px 24px 28px;
+  }
+  .quiz-card:has(.lead-screen) {
+    width: min(100%, 520px);
+    max-width: 520px;
+    min-height: auto;
+  }
+  .lead-screen {
+    min-height: auto;
+  }
+
+  /* Screen 22 — before-after, 2-col */
+  .quiz-page:has(.transition-screen--22) {
+    align-items: center;
+    padding: 18px 24px 28px;
+  }
+  .quiz-card:has(.transition-screen--22) {
+    width: min(100%, 920px);
+    max-width: 920px;
+    min-height: auto;
+    padding: 30px 38px 34px;
+  }
+  .transition-screen--22 {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px 44px;
+  }
+  .transition-screen--22 .final-before-after {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 0;
+  }
+  .transition-screen--22 .screen-heading {
+    grid-column: 2;
+    margin-bottom: 0;
+    align-self: end;
+  }
+  .transition-screen--22 .screen-heading h1 {
+    white-space: pre-line;
+  }
+  .transition-screen--22 .sticky-action {
+    grid-column: 2;
+    position: static;
+    margin-top: 0;
+    align-self: start;
+  }
+}
