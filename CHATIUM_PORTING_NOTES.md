@@ -68,6 +68,21 @@ window.localStorage.setItem('usmanova_quiz_leads', JSON.stringify([...currentLea
 - Отзыв на экране 10: `src/data/quizScreens.ts`, экран `id: 10`.
 - Отзывы в пейволле: `src/components/PaywallScreen.tsx`, блок `reviews-panel`.
 
+## Chatium single-file export
+
+Для Chatium подготовлен отдельный архив:
+`usmanova-quiz-funnel-chatium-single.zip`
+
+Внутри один файл `index.html`. CSS, JS и локальные изображения встроены внутрь файла, чтобы избежать 404 на assets внутри Chatium.
+
+Обычный `clean.zip` — это исходники проекта.
+Обычный `dist.zip` может не подойти для Chatium, если платформа не раздаёт вложенные assets как статическую папку.
+
+Пересобрать single-file HTML можно командой:
+```bash
+node scripts/build-chatium-single.mjs
+```
+
 ## Что проверить после импорта
 
 - Все 24 экрана проходят в правильном порядке.
