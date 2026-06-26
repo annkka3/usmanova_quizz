@@ -182,7 +182,11 @@ export function PaywallScreen({ result }: PaywallScreenProps) {
         </div>
       </div>
 
-      <GetCourseEmbed />
+      <div className="checkout-section">
+        <h2>Оформление заказа</h2>
+        <p className="checkout-note">Выберите доступный вариант оплаты в форме ниже. Данные заказа обрабатываются через GetCourse.</p>
+        <GetCourseEmbed />
+      </div>
 
       <div className="faq">
         <h2>Частые вопросы</h2>

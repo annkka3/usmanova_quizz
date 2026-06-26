@@ -1738,9 +1738,27 @@ input {
   text-align: center;
 }
 
+.checkout-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkout-section h2 {
+  margin: 0;
+}
+
+.checkout-note {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .getcourse-placeholder {
   border-style: dashed;
   background: #fff8fb;
+  min-height: 80px;
 }
 
 .getcourse-placeholder p {
