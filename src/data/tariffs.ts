@@ -1,6 +1,7 @@
 export type Tariff = {
   title: string;
   badge?: string;
+  highlight?: boolean;
   price: string;
   oldPrice: string;
   period: string;
@@ -29,6 +30,7 @@ export const tariffs: Tariff[] = [
   {
     title: 'Хит продаж',
     badge: 'Максимум выгоды',
+    highlight: true,
     price: '4990 руб',
     oldPrice: '9990 руб',
     period: '6 месяцев',

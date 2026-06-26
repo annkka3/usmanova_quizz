@@ -1687,6 +1687,20 @@ input {
   box-shadow: 0 16px 34px rgba(244, 91, 149, 0.18);
 }
 
+.tariff-card.is-highlighted {
+  background: linear-gradient(145deg, #fff0f7 0%, #fce4ef 55%, #fdf0f6 100%);
+  border-color: rgba(244, 91, 149, 0.6);
+  box-shadow: 0 18px 40px rgba(244, 91, 149, 0.22);
+}
+
+.tariff-card.is-highlighted .tariff-badge {
+  background: rgba(244, 91, 149, 0.18);
+}
+
+.tariff-card.is-highlighted .price-row strong {
+  color: var(--pink-strong);
+}
+
 .price-row {
   display: flex;
   flex-wrap: wrap;

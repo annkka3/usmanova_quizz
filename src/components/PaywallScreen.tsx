@@ -135,7 +135,7 @@ export function PaywallScreen({ result }: PaywallScreenProps) {
 
       <div id="tariff-section" className="tariff-list">
         {tariffs.map((tariff) => (
-          <article className={`tariff-card${tariff.badge ? ' is-featured' : ''}`} key={tariff.title}>
+          <article className={`tariff-card${tariff.badge ? ' is-featured' : ''}${tariff.highlight ? ' is-highlighted' : ''}`} key={tariff.title}>
             <div className="tariff-top-badges">
               {tariff.badge ? <span className="tariff-badge">{tariff.badge}</span> : null}
               <span className="tariff-discount">{getDiscount(tariff.price, tariff.oldPrice)}</span>
