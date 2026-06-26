@@ -3139,6 +3139,16 @@ input {
   color: var(--text);
 }
 
+.price-anchor-days {
+  display: block;
+}
+
+@media (min-width: 720px) {
+  .price-anchor-days {
+    display: inline;
+  }
+}
+
 .price-anchor-btn {
   flex-shrink: 0;
   background: var(--pink-strong);

@@ -64,7 +64,7 @@ export function PaywallScreen({ result }: PaywallScreenProps) {
       </div>
 
       <div className="price-anchor">
-        <span className="price-anchor-text">Доступ от 390 руб · 7 дней</span>
+        <span className="price-anchor-text">Доступ от 390 руб · <span className="price-anchor-days">7 дней</span></span>
         <button
           className="price-anchor-btn"
           type="button"
